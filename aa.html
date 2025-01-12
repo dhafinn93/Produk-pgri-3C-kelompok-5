@@ -1,0 +1,62 @@
+<style>
+    .navbar .navbar-brand {
+      color: #fff;
+    }
+    .navbar .navbar-brand strong {
+      color: #fff; 
+    }
+  </style>
+
+<style>
+.container {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.judul-kategori {
+  position: relative;
+  z-index: 2;
+  padding: 200px 50px;
+  text-align: center;
+}
+
+.judul-kategori h2 {
+  font-size: 36px; /* Ubah ukuran font */
+  font-family: 'Arial', sans-serif; /* Ubah jenis font */
+  margin-top: 5px;
+  color: #ffffff; /* Warna teks */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay untuk memastikan teks terlihat */
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<video class="video-background" autoplay loop muted>
+  <source src="" type="video/mp4"> <!-- Ganti 'your-video-url.mp4' dengan URL video Anda -->
+  Your browser does not support the video tag.
+</video>
+<div class="overlay"></div>
+<div class="judul-kategori">
+  <h2 class="text-center">Selamat Datang</h2>
+</div>
+</div>

@@ -1,0 +1,80 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+    z-index: 2;
+}
+
+.judul-kategori {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+.judul-kategori h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+/* Menyesuaikan tombol tampilkan */
+.btn {
+    background-color: #0059ff; /* Warna latar belakang biru */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 20px; /* Memberikan jarak pada tombol */
+    border-radius: 5px; /* Sudut tombol membulat */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi untuk warna latar belakang dan transformasi */
+  }
+  
+  .btn:hover {
+    background-color: #15ff00; /* Warna latar belakang hijau terang saat hover */
+    transform: scale(1.1); /* Efek zoom-in saat tombol di-hover */
+  }
+  
+  .btn:focus, .btn:active {
+    outline: none; /* Menghapus outline ketika tombol aktif atau difokuskan */
+    background-color: #ff8d1e; /* Ubah warna latar belakang saat tombol aktif */
+  }
+  .judul-kategori h2 {
+    margin-bottom: 20px; /* Memberikan jarak bawah pada judul */
+}
+
+.judul-kategori a.btn {
+    margin-top: 20px; /* Memberikan jarak atas pada tombol */
+}

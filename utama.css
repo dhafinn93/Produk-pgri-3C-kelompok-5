@@ -1,0 +1,19 @@
+.btn {
+    background-color: #0059ff; /* Warna latar belakang biru */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 20px; /* Memberikan jarak pada tombol */
+    border-radius: 5px; /* Sudut tombol membulat */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi untuk warna latar belakang dan transformasi */
+  }
+  
+  .btn:hover {
+    background-color: #15ff00; /* Warna latar belakang hijau terang saat hover */
+    transform: scale(1.1); /* Efek zoom-in saat tombol di-hover */
+  }
+  
+  .btn:focus, .btn:active {
+    outline: none; /* Menghapus outline ketika tombol aktif atau difokuskan */
+    background-color: #ff8d1e; /* Ubah warna latar belakang saat tombol aktif */
+  }
